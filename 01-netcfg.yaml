@@ -1,0 +1,20 @@
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens160:
+      dhcp4: yes
+      addresses: [172.16.144.166/24]
+      gateway4: 172.16.144.250
+      nameservers:
+        search: [ianlee.com]
+        addresses: [172.16.144.166,172.16.144.1]
+    ens192:
+      dhcp4: no
+      addresses: [10.0.0.1/24]
+      gateway4: 10.0.0.1
+      nameservers:
+        search: [ianlee.com]
+        addresses: [10.0.0.1,172.16.144.166]

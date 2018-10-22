@@ -71,4 +71,3 @@ aggregate multiple ports under a common configuration providing a stable anchor 
 VM's.
 
 All of this is was created from a datastore hosted on VMware ESXi on the 172.16.144.27 network.
-
